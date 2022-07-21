@@ -1,0 +1,203 @@
+.head {
+  text-align: center;
+}
+
+.head h1 {
+  font-size: 2.5vw;
+}
+
+.head p {
+  font-size: 1.5vw;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 15vw;
+}
+
+.verticalLine {
+  border-left: 0.15vw solid rgb(177, 177, 177);
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+
+.rightup {
+  font-size: 1.3vw;
+  font-family: "textamedium";
+  margin: 0;
+}
+
+.rightdown {
+  font-family: "textasmall";
+  font-size: 1.5vw;
+  max-width: 13vw;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.purple {
+  color: #8800b4;
+}
+
+.calendar {
+  max-width: 25vw;
+}
+
+.calendar ul {
+  list-style-type: none;
+}
+
+.calendar h1 {
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+/* Month header */
+.month {
+  text-align: center;
+  user-select: none;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 0.6vw 0;
+  font-size: 1.3vw;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 0.6vw 0;
+  padding-top: 0;
+  margin: 0;
+  user-select: none;
+}
+
+.day {
+  cursor: pointer;
+}
+
+.innactiveDay {
+  opacity: 0.3;
+}
+
+.active {
+  color: #8800b4;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 0.3vw;
+  font-size: 1.3vw;
+}
+
+.form {
+  display: none;
+  justify-content: space-between;
+}
+
+.input {
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid #662d91;
+  color: #662d91;
+  font-family: 'textabold';
+  font-size: 1vw;
+}
+
+.input::placeholder{
+  color: #662d91;
+}
+
+.button {
+  font-family: "textabold";
+  font-size: 1.2vw;
+  background-color: transparent;
+  border: 0.2vw solid #662d91;
+  color: #662d91;
+  border-radius: 0.7vw;
+  cursor: pointer;
+  padding: 0.1rem 1rem;
+  padding-top: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+  font-family: "textabold";
+}
+
+.footer h1 {
+  margin: 0;
+  font-size: 2vw;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1.6vw;
+  font-family: "textasmall";
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer li {
+  float: right;
+}
+
+.footer ul img {
+  width: 5vw !important;
+  height: 5vw !important;
+}
