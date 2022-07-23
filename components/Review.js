@@ -20,7 +20,7 @@ const Review = (props) => {
         <span className={classes.stars}>
           <Image src={props.stars} alt={"stars"} className={classes.stars} />{" "}
         </span>
-        <span className={classes.score}>(4.3/5)</span>
+        <span className={classes.score}>({props.grade}/5)</span>
       </div>
       <p className={classes.description}>{props.description}</p>
     </div>

@@ -11,7 +11,12 @@ import logo from "../assets/logo.png";
 import setup from "../assets/setup.png";
 
 import stars1 from "../assets/stars/stars1.svg";
+import stars2 from "../assets/stars/stars2.svg";
+import stars3 from "../assets/stars/stars3.svg";
 import stars4 from "../assets/stars/stars4.svg";
+import stars5 from "../assets/stars/stars5.svg";
+import stars6 from "../assets/stars/stars6.svg";
+import stars7 from "../assets/stars/stars7.svg";
 
 import avatar1 from "../assets/avatars/avatar1.png";
 import avatar2 from "../assets/avatars/avatar2.png";
@@ -97,11 +102,11 @@ export default function Home() {
               <div className={classes.starsContainer}>
                 <Image
                   // loader={myLoader}
-                  src={stars1}
+                  src={stars4}
                   alt={"stars"}
                 />
                 <span className={classes.starsText}>
-                  &nbsp;&nbsp;(4.3/5) <span>Over 12 Satisfied Clients</span>
+                  &nbsp;&nbsp;(4.4/5) <span>Over 12 Satisfied Clients</span>
                 </span>
               </div>
               <button onClick={viewReviews} className={classes.reviewsBtn}>
@@ -111,7 +116,8 @@ export default function Home() {
             <div id="reviews" className={classes.reviews}>
               <Review
                 avatar={avatar1}
-                stars={stars4}
+                stars={stars6}
+                grade={"4.8"}
                 name={"Bernard Stojanovic"}
                 description={
                   "Great guys overall, I loved the communication skils and how fast they worked. On the services side I'm pleased with the results, the design is amazing and I got a lot of stuff for that price"
@@ -119,7 +125,8 @@ export default function Home() {
               />
               <Review
                 avatar={avatar3}
-                stars={stars4}
+                stars={stars5}
+                grade={"4.5"}
                 name={"Ted J.Albert"}
                 description={
                   "Good job! I didn t realy trusted some teenagers to build my business but they surprized me, extreamely smart guys , good quality of the logo and website , and some interesting strategies!"
@@ -127,7 +134,8 @@ export default function Home() {
               />
               <Review
                 avatar={avatar2}
-                stars={stars4}
+                stars={stars3}
+                grade={"4.3"}
                 name={"Alice Croft"}
                 description={
                   "I love it! I just gave them some ideas and they made everything for me, they even helped me after, running the business further because i don t know very mouch about marketing and design  If you want something done good without spending effort work with this guys!"
@@ -135,7 +143,8 @@ export default function Home() {
               />
               <Review
                 avatar={avatar4}
-                stars={stars4}
+                stars={stars2}
+                grade={"4"}
                 name={"Eduardo Folliero"}
                 description={
                   "Perfect, they did all i needed for my jetsky rental store, from the logo, banners, cool website and some advices to get new clients I recommend +aspect for any tipe of business, they can realy help you"
