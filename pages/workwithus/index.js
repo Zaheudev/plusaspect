@@ -73,7 +73,7 @@ export default function Workwithus() {
   };
 
   return (
-    <section>
+    <section className={classes.container}>
       <header className={classes.head}>
         <h1>
           Great Choise,{" "}
@@ -141,6 +141,7 @@ export default function Workwithus() {
           </div>
         </div>
         <span className={classes.verticalLine}></span>
+        <hr/>
         <div className={classes.right}>
           <p className={classes.rightup}>
             {" "}

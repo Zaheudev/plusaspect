@@ -4,6 +4,16 @@
     "ignore": [
       "firebase.json",
       "**/node_modules/**"
-    ]
+    ],
+    "rewrites": [ {
+      "source": "/workwithus",
+      "destination": "/workwithus.html"
+    }, {
+      "source": "/learn",
+      "destination": "/learn.html"
+    }, {
+      "source": "**",
+      "destination": "/index.html"
+    } ]
   }
 }
