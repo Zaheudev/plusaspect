@@ -10,13 +10,11 @@ import logo from "../assets/logo.png";
 
 import setup from "../assets/setup.png";
 
-import stars1 from "../assets/stars/stars1.svg";
 import stars2 from "../assets/stars/stars2.svg";
 import stars3 from "../assets/stars/stars3.svg";
 import stars4 from "../assets/stars/stars4.svg";
 import stars5 from "../assets/stars/stars5.svg";
 import stars6 from "../assets/stars/stars6.svg";
-import stars7 from "../assets/stars/stars7.svg";
 
 import avatar1 from "../assets/avatars/avatar1.png";
 import avatar2 from "../assets/avatars/avatar2.png";
@@ -183,7 +181,7 @@ export default function Home() {
                   <span className={classes.purple}>Meeting</span>
                 </h1>
                 <p>
-                  1 Hour Call Were We Will Discust Everything About The Business
+                  1 Hour Call Were We Will Discuss Everything About The Business
                   Plan/How To Bring Your Ideas To Life
                 </p>
               </div>
@@ -320,7 +318,7 @@ export default function Home() {
                 <br /> -
                 <span className={classes.purple}>
                   {" "}
-                  We will weep you up to date{" "}
+                  We will keep you up to date{" "}
                 </span>
                 for every new trend, every new idea that you come with, or every
                 change that you want to make
@@ -371,13 +369,13 @@ export default function Home() {
                 <br />
                 <br /> -You will have to pay a
                 <span className={classes.purple}> small part in advance </span>
-                only after we discusst everything about
+                only after we discuss everything about
                 <span className={classes.purple}> your business </span>
                 <br />
                 <br /> -We will even teach you how to
                 <span className={classes.purple}> use crypto </span>(for sending
-                money and receveing)
-                <span className={classes.purple}> becauze is 2022</span>, you
+                money and receiving)
+                <span className={classes.purple}> because is 2022</span>, you
                 have to know..
               </p>
             </div>

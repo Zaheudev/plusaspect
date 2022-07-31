@@ -77,7 +77,7 @@ export default function Workwithus() {
       <header className={classes.head}>
         <h1>
           Great Choise,{" "}
-          <span className={classes.purple}>Let s Start From Here</span>
+          <span className={classes.purple}>Let's Start From Here</span>
         </h1>
         <p>
           You Can Program A <span className={classes.purple}>Zoom Meeting</span>

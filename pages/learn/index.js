@@ -3,7 +3,7 @@ import classes from "./learn.module.css";
 
 export default function Learn() {
   return (
-    <div>
+    <div className={classes.container}>
       <Head>
         <title>Plus Aspect | Learn</title>
         <meta
