@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Icon = (props) => {
   return (
-    <div style={{cursor:"pointer"}}>
+    <div style={{ cursor: "pointer" }}>
       <Link
-        href="https://www.facebook.com/Plus-Aspect-113498961376645"
+        href={props.link}
         target="_blank"
       >
         <Image

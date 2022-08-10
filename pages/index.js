@@ -36,7 +36,7 @@ export default function Home() {
     <div className={classes.container}>
       <Head>
         <title>Plus Aspect</title>
-        <meta name="description" content="Plus Aspect official website" />
+        <meta name="description" content="Plus Aspect Official Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={classes.navbar}>
@@ -50,16 +50,16 @@ export default function Home() {
           />
           <span className={classes.contact}>
             <li>
-              <Icon image={facebook} alt={"facebook icon"} />
+              <Icon image={facebook} alt={"facebook icon"} link={"https://www.facebook.com/Plus-Aspect-113498961376645"}/>
             </li>
             <li>
-              <Icon image={instagram} alt={"instagram icon"} />
+              <Icon image={instagram} alt={"instagram icon"} link={"https://www.instagram.com/plusaspect/"} />
             </li>
             <li>
-              <Icon image={telegram} alt={"telegram icon"} />
+              <Icon image={telegram} alt={"telegram icon"} link={"https://www.facebook.com/Plus-Aspect-113498961376645"}/>
             </li>
             <li>
-              <Icon image={whatsapp} alt={"whatsapp icon"} />
+              <Icon image={whatsapp} alt={"whatsapp icon"} link={"https://www.facebook.com/Plus-Aspect-113498961376645"}/>
             </li>
             <li>
               <a>Become&nbsp;&nbsp;Friends&nbsp;&nbsp;With&nbsp;&nbsp;Us</a>

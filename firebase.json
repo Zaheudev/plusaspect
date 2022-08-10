@@ -5,15 +5,25 @@
       "firebase.json",
       "**/node_modules/**"
     ],
-    "rewrites": [ {
-      "source": "/workwithus",
-      "destination": "/workwithus.html"
-    }, {
-      "source": "/learn",
-      "destination": "/learn.html"
-    }, {
-      "source": "**",
-      "destination": "/index.html"
-    } ]
+    "rewrites": [
+      {
+        "source": "/workwithus",
+        "destination": "/workwithus.html"
+      },
+      {
+        "source": "/learn",
+        "destination": "/learn.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions",
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ]
   }
 }

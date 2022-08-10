@@ -6,6 +6,58 @@
   animation: fadein 2s;
 }
 
+.modalContainer{
+  display: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 20vh;
+  left: 5%;
+  width: 90%;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+.valid{
+  color: #8800b4;
+  font-family: "textabold";
+  text-align: center;
+  font-size: 2vw;
+}
+
+.error::placeholder{
+  color: red !important;
+}
+
+.error{
+  border-color: red !important;
+}
+
+.loader {
+  border: .5vw solid #f3f3f3; /* Light grey */
+  border-top: .5vw solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
 .head {
   text-align: center;
 }
@@ -148,8 +200,17 @@
 }
 
 .form {
-  display: none;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.form p {
+  color: #8800b4;
+  font-family: "textabold";
+  font-size: 1.5vw;
+  margin: 0;
+  margin-bottom: 1vw;
 }
 
 .input {
@@ -162,6 +223,8 @@
   color: #662d91;
   font-family: "textabold";
   font-size: 1vw;
+  margin: 1vw;
+  margin-top: 0;
 }
 
 .input::placeholder {
@@ -277,8 +340,8 @@
     max-width: fit-content;
   }
 
-  .form {
-    margin-top: 3vw;
+  .form p{
+    font-size: 4.5vw;
     margin-bottom: 3vw;
   }
 
@@ -292,6 +355,18 @@
     border-radius: 2vw;
   }
 
+  .valid{
+    font-size: 5vw;
+  }
+
+  .loader{
+    width: 8vw;
+    height: 8vw;
+    border: 1.5vw solid #f3f3f3; /* Light grey */
+    border-top: 1.5vw solid #3498db; /* Blue */
+    margin-top: 4vw;
+  }
+
   .footer h1 {
     font-size: 6.5vw;
   }
@@ -301,8 +376,16 @@
   }
 
   .footer ul img {
-    width: 12.5vw !important;
-    height: 12.5vw !important;
+    width: 14vw !important;
+    height: 14vw !important;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
   }
 }
 
@@ -344,3 +427,20 @@
     opacity: 1;
   }
 }
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

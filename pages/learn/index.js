@@ -8,7 +8,7 @@ export default function Learn() {
         <title>Plus Aspect | Learn</title>
         <meta
           name="description"
-          content="Plus Aspect official website, learn feature"
+          content="Plus Aspect Official Website, Learn Page"
         />
       </Head>
       <main className={classes.main}>
