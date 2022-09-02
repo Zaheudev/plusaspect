@@ -139,3 +139,215 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-08-10T13:10:59.255Z] File C:\Users\razva\Desktop\plus-aspect\site\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\index.js changed, reloading triggers"}}
 [debug] [2022-08-10T13:11:00.256Z] [worker-pool] Shutting down IDLE worker (us-central1-sendData) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-sendData)"}}
 [debug] [2022-08-10T13:11:00.256Z] [worker-us-central1-sendData-8812c2e5-1574-4322-96fd-dcb4a18ca5bf]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-8812c2e5-1574-4322-96fd-dcb4a18ca5bf]: FINISHING"}}
+[debug] [2022-08-10T13:11:08.069Z] ----------------------------------------------------------------------
+[debug] [2022-08-10T13:11:08.071Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\razva\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-08-10T13:11:08.071Z] CLI Version:   10.9.2
+[debug] [2022-08-10T13:11:08.071Z] Platform:      win32
+[debug] [2022-08-10T13:11:08.071Z] Node Version:  v14.15.4
+[debug] [2022-08-10T13:11:08.073Z] Time:          Wed Aug 10 2022 16:11:08 GMT+0300 (Eastern European Summer Time)
+[debug] [2022-08-10T13:11:08.073Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-10T13:11:08.151Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-10T13:11:08.151Z] > authorizing via signed-in user (zaheudev@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project plus-aspect. This may result in unexpected behavior. 
+[debug] [2022-08-10T13:11:08.212Z] [hub] writing locator at C:\Users\razva\AppData\Local\Temp\hub-plus-aspect.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[warn] !  Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-08-10T13:11:08.271Z] defaultcredentials: writing to file C:\Users\razva\AppData\Roaming\firebase\zaheudev_gmail_com_application_default_credentials.json
+[debug] [2022-08-10T13:11:08.278Z] Setting GAC to C:\Users\razva\AppData\Roaming\firebase\zaheudev_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\razva\\AppData\\Roaming\\firebase\\zaheudev_gmail_com_application_default_credentials.json"}}
+[debug] [2022-08-10T13:11:08.283Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/plus-aspect/adminSdkConfig [none]
+[debug] [2022-08-10T13:11:08.612Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/plus-aspect/adminSdkConfig 200
+[debug] [2022-08-10T13:11:08.612Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/plus-aspect/adminSdkConfig {"projectId":"plus-aspect","storageBucket":"plus-aspect.appspot.com","locationId":"europe-west"}
+[debug] [2022-08-10T13:11:08.626Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/plus-aspect/sites 
+[debug] [2022-08-10T13:11:09.775Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/plus-aspect/sites 200
+[debug] [2022-08-10T13:11:09.775Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/plus-aspect/sites {"sites":[{"name":"projects/plus-aspect/sites/plus-aspect","defaultUrl":"https://plus-aspect.web.app","appId":"1:662237916494:web:82991d8476f7d3d407821f","type":"DEFAULT_SITE"}]}
+[debug] [2022-08-10T13:11:09.776Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/plus-aspect/webApps/1:662237916494:web:82991d8476f7d3d407821f/config [none]
+[debug] [2022-08-10T13:11:10.687Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/plus-aspect/webApps/1:662237916494:web:82991d8476f7d3d407821f/config 200
+[debug] [2022-08-10T13:11:10.687Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/plus-aspect/webApps/1:662237916494:web:82991d8476f7d3d407821f/config {"projectId":"plus-aspect","appId":"1:662237916494:web:82991d8476f7d3d407821f","storageBucket":"plus-aspect.appspot.com","locationId":"europe-west","apiKey":"AIzaSyDSA2tJE5LeU-re3afMahFBRBxJtCSPwVU","authDomain":"plus-aspect.firebaseapp.com","messagingSenderId":"662237916494","measurementId":"G-R6FLP2790G"}
+[info] i  hosting: Serving hosting files from: out {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mout\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2022-08-10T13:11:10.841Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-10T13:11:10.841Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-10T13:11:10.841Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\razva\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\razva\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-08-10T13:11:11.023Z] Web / API server started at localhost:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4001\n"}}
+[info] i  functions: Watching "C:\Users\razva\Desktop\plus-aspect\site\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\" for Cloud Functions..."}}
+[debug] [2022-08-10T13:11:11.133Z] Validating nodejs source
+[debug] [2022-08-10T13:11:14.335Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "lint": ""
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "sib-api-v3-sdk": "^8.4.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-10T13:11:14.336Z] Building nodejs source
+[debug] [2022-08-10T13:11:14.336Z] Analyzing nodejs backend spec
+[debug] [2022-08-10T13:11:14.337Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-10T13:11:14.700Z] Serving at port 9005
+
+[debug] [2022-08-10T13:11:15.229Z] Got response from /__/functions.yaml {"endpoints":{"sendData":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"sendData"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-10T13:11:15.236Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions[us-central1-sendData]: http function initialized (http://localhost:5001/plus-aspect/us-central1/sendData). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/plus-aspect/us-central1/sendData)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4001                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4001/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-08-10T13:11:18.428Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-10T13:11:18.428Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-10T13:11:18.429Z] Accepted request POST /plus-aspect/us-central1/sendData --> us-central1-sendData
+[debug] [2022-08-10T13:11:18.440Z] [worker-pool] addWorker(us-central1-sendData) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-sendData)"}}
+[debug] [2022-08-10T13:11:18.440Z] [worker-pool] Adding worker with key us-central1-sendData, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-sendData, total=1"}}
+[debug] [2022-08-10T13:11:18.440Z] [worker-pool] submitWork(triggerId=us-central1-sendData) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-sendData)"}}
+[debug] [2022-08-10T13:11:18.441Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: Assigning socketPath: \\?\pipe\C:\Users\razva\Desktop\plus-aspect\site\functions\21472 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\21472"}}
+[debug] [2022-08-10T13:11:18.441Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: BUSY"}}
+[debug] [2022-08-10T13:11:20.492Z] [runtime-status] [21472] Functions runtime initialized. {"cwd":"C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions","node_version":"14.15.4"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\razva\\\\Desktop\\\\plus-aspect\\\\site\\\\functions\",\"node_version\":\"14.15.4\"}"}}
+[debug] [2022-08-10T13:11:20.497Z] [runtime-status] [21472] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Disabled runtime features: undefined"}}
+[debug] [2022-08-10T13:11:20.501Z] [runtime-status] [21472] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\razva\\\\Desktop\\\\plus-aspect\\\\site\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-10T13:11:20.504Z] [runtime-status] [21472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\razva\\\\Desktop\\\\plus-aspect\\\\site\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-10T13:11:20.504Z] [runtime-status] [21472] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-10T13:11:20.506Z] [runtime-status] [21472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\razva\\\\Desktop\\\\plus-aspect\\\\site\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-10T13:11:20.584Z] [runtime-status] [21472] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-08-10T13:11:20.584Z] [runtime-status] [21472] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\razva\\\\Desktop\\\\plus-aspect\\\\site\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-10T13:11:20.585Z] [runtime-status] [21472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\razva\\\\Desktop\\\\plus-aspect\\\\site\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-10T13:11:20.588Z] [runtime-status] [21472] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\razva\\\\Desktop\\\\plus-aspect\\\\site\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-10T13:11:20.589Z] [runtime-status] [21472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\razva\\\\Desktop\\\\plus-aspect\\\\site\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-10T13:11:20.589Z] [runtime-status] [21472] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\razva\\\\Desktop\\\\plus-aspect\\\\site\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-10T13:11:20.593Z] [runtime-status] [21472] initializeApp(DEFAULT) {"storageBucket":"plus-aspect.appspot.com","projectId":"plus-aspect"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] initializeApp(DEFAULT) {\"storageBucket\":\"plus-aspect.appspot.com\",\"projectId\":\"plus-aspect\"}"}}
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2022-08-10T13:11:20.992Z] [runtime-status] [21472] Beginning invocation function sendData! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Beginning invocation function sendData!"}}
+[info] i  functions: Beginning execution of "sendData" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"Beginning execution of \"sendData\""}}
+[debug] [2022-08-10T13:11:20.994Z] [runtime-status] [21472] Running sendData in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Running sendData in signature http"}}
+[debug] [2022-08-10T13:11:20.998Z] [runtime-status] [21472] Attempting to listen to socketPath: \\?\pipe\C:\Users\razva\Desktop\plus-aspect\site\functions\21472 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\21472"}}
+[debug] [2022-08-10T13:11:21.001Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-10T13:11:21.002Z] [functions] Got req.url=/plus-aspect/us-central1/sendData, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/plus-aspect/us-central1/sendData, mapping to path=/"}}
+[debug] [2022-08-10T13:11:21.023Z] [runtime-status] [21472] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Ephemeral server handling POST request"}}
+[debug] [2022-08-10T13:11:21.031Z] [runtime-status] [21472] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Ephemeral server survived."}}
+[info] i  functions: Finished "sendData" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"Finished \"sendData\" in ~1s"}}
+[debug] [2022-08-10T13:11:21.033Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: IDLE"}}
+[debug] [2022-08-10T13:11:21.033Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-10T13:11:23.475Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-10T13:11:23.475Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-10T13:11:23.475Z] Accepted request POST /plus-aspect/us-central1/sendData --> us-central1-sendData
+[debug] [2022-08-10T13:11:23.476Z] [worker-pool] submitWork(triggerId=us-central1-sendData) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-sendData)"}}
+[debug] [2022-08-10T13:11:23.476Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: Assigning socketPath: \\?\pipe\C:\Users\razva\Desktop\plus-aspect\site\functions\21472 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\21472"}}
+[debug] [2022-08-10T13:11:23.477Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: BUSY"}}
+[debug] [2022-08-10T13:11:23.478Z] [runtime-status] [21472] Beginning invocation function sendData! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Beginning invocation function sendData!"}}
+[info] i  functions: Beginning execution of "sendData" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"Beginning execution of \"sendData\""}}
+[debug] [2022-08-10T13:11:23.479Z] [runtime-status] [21472] Running sendData in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Running sendData in signature http"}}
+[debug] [2022-08-10T13:11:23.479Z] [runtime-status] [21472] Attempting to listen to socketPath: \\?\pipe\C:\Users\razva\Desktop\plus-aspect\site\functions\21472 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\21472"}}
+[debug] [2022-08-10T13:11:23.481Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-10T13:11:23.481Z] [functions] Got req.url=/plus-aspect/us-central1/sendData, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/plus-aspect/us-central1/sendData, mapping to path=/"}}
+[debug] [2022-08-10T13:11:23.483Z] [runtime-status] [21472] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Ephemeral server handling POST request"}}
+[info] >  {"structuredData":true,"severity":"INFO","message":"Writing data to database"} {"user":{"structuredData":true,"severity":"INFO","message":"Writing data to database"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"structuredData\":true,\"severity\":\"INFO\",\"message\":\"Writing data to database\"}"}}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    email: 'zaheudev@gmail.com', {"user":"  email: 'zaheudev@gmail.com',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m   email: 'zaheudev@gmail.com',"}}
+[info] >    day: '18', {"user":"  day: '18',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m   day: '18',"}}
+[info] >    month: '8', {"user":"  month: '8',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m   month: '8',"}}
+[info] >    year: '2022', {"user":"  year: '2022',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m   year: '2022',"}}
+[info] >    phone: '1234' {"user":"  phone: '1234'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m   phone: '1234'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2022-08-10T13:11:24.130Z] [runtime-status] [21472] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Ephemeral server survived."}}
+[info] i  functions: Finished "sendData" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"Finished \"sendData\" in ~1s"}}
+[debug] [2022-08-10T13:11:24.151Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: IDLE"}}
+[debug] [2022-08-10T13:11:24.151Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[warn] !  Google API requested!
+   - URL: "https://oauth2.googleapis.com/token"
+   - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"Google API requested!\n   - URL: \"https://oauth2.googleapis.com/token\"\n   - Be careful, this may be a production service."}}
+[info] >  API called successfully. Returned data: {"messageId":"<202208101511.83311206451@smtp-relay.mailin.fr>"} {"user":"API called successfully. Returned data: {\"messageId\":\"<202208101511.83311206451@smtp-relay.mailin.fr>\"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m API called successfully. Returned data: {\"messageId\":\"<202208101511.83311206451@smtp-relay.mailin.fr>\"}"}}
+[debug] [2022-08-10T13:11:28.017Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-10T13:11:28.018Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-10T13:11:28.018Z] Accepted request POST /plus-aspect/us-central1/sendData --> us-central1-sendData
+[debug] [2022-08-10T13:11:28.018Z] [worker-pool] submitWork(triggerId=us-central1-sendData) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-sendData)"}}
+[debug] [2022-08-10T13:11:28.018Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: Assigning socketPath: \\?\pipe\C:\Users\razva\Desktop\plus-aspect\site\functions\21472 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\21472"}}
+[debug] [2022-08-10T13:11:28.018Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: BUSY"}}
+[debug] [2022-08-10T13:11:28.019Z] [runtime-status] [21472] Beginning invocation function sendData! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Beginning invocation function sendData!"}}
+[info] i  functions: Beginning execution of "sendData" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"Beginning execution of \"sendData\""}}
+[debug] [2022-08-10T13:11:28.020Z] [runtime-status] [21472] Running sendData in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Running sendData in signature http"}}
+[debug] [2022-08-10T13:11:28.020Z] [runtime-status] [21472] Attempting to listen to socketPath: \\?\pipe\C:\Users\razva\Desktop\plus-aspect\site\functions\21472 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\21472"}}
+[debug] [2022-08-10T13:11:28.022Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-10T13:11:28.022Z] [functions] Got req.url=/plus-aspect/us-central1/sendData, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/plus-aspect/us-central1/sendData, mapping to path=/"}}
+[debug] [2022-08-10T13:11:28.026Z] [runtime-status] [21472] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Ephemeral server handling POST request"}}
+[debug] [2022-08-10T13:11:28.028Z] [runtime-status] [21472] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Ephemeral server survived."}}
+[info] i  functions: Finished "sendData" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"Finished \"sendData\" in ~1s"}}
+[debug] [2022-08-10T13:11:28.029Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: IDLE"}}
+[debug] [2022-08-10T13:11:28.029Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-10T13:11:32.505Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-10T13:11:32.506Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-10T13:11:32.506Z] Accepted request POST /plus-aspect/us-central1/sendData --> us-central1-sendData
+[debug] [2022-08-10T13:11:32.506Z] [worker-pool] submitWork(triggerId=us-central1-sendData) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-sendData)"}}
+[debug] [2022-08-10T13:11:32.506Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: Assigning socketPath: \\?\pipe\C:\Users\razva\Desktop\plus-aspect\site\functions\21472 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\21472"}}
+[debug] [2022-08-10T13:11:32.506Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: BUSY"}}
+[debug] [2022-08-10T13:11:32.508Z] [runtime-status] [21472] Beginning invocation function sendData! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Beginning invocation function sendData!"}}
+[info] i  functions: Beginning execution of "sendData" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"Beginning execution of \"sendData\""}}
+[debug] [2022-08-10T13:11:32.509Z] [runtime-status] [21472] Running sendData in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Running sendData in signature http"}}
+[debug] [2022-08-10T13:11:32.509Z] [runtime-status] [21472] Attempting to listen to socketPath: \\?\pipe\C:\Users\razva\Desktop\plus-aspect\site\functions\21472 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\21472"}}
+[debug] [2022-08-10T13:11:32.511Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-10T13:11:32.512Z] [functions] Got req.url=/plus-aspect/us-central1/sendData, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/plus-aspect/us-central1/sendData, mapping to path=/"}}
+[debug] [2022-08-10T13:11:32.514Z] [runtime-status] [21472] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Ephemeral server handling POST request"}}
+[debug] [2022-08-10T13:11:32.516Z] [runtime-status] [21472] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Ephemeral server survived."}}
+[info] i  functions: Finished "sendData" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"Finished \"sendData\" in ~1s"}}
+[debug] [2022-08-10T13:11:32.518Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: IDLE"}}
+[debug] [2022-08-10T13:11:32.518Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-10T13:13:11.873Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-10T13:13:11.873Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-10T13:13:11.873Z] Accepted request POST /plus-aspect/us-central1/sendData --> us-central1-sendData
+[debug] [2022-08-10T13:13:11.873Z] [worker-pool] submitWork(triggerId=us-central1-sendData) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-sendData)"}}
+[debug] [2022-08-10T13:13:11.873Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: Assigning socketPath: \\?\pipe\C:\Users\razva\Desktop\plus-aspect\site\functions\21472 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\21472"}}
+[debug] [2022-08-10T13:13:11.873Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: BUSY"}}
+[debug] [2022-08-10T13:13:11.874Z] [runtime-status] [21472] Beginning invocation function sendData! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Beginning invocation function sendData!"}}
+[info] i  functions: Beginning execution of "sendData" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"Beginning execution of \"sendData\""}}
+[debug] [2022-08-10T13:13:11.876Z] [runtime-status] [21472] Running sendData in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Running sendData in signature http"}}
+[debug] [2022-08-10T13:13:11.877Z] [runtime-status] [21472] Attempting to listen to socketPath: \\?\pipe\C:\Users\razva\Desktop\plus-aspect\site\functions\21472 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\razva\\Desktop\\plus-aspect\\site\\functions\\21472"}}
+[debug] [2022-08-10T13:13:11.879Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-10T13:13:11.879Z] [functions] Got req.url=/plus-aspect/us-central1/sendData, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/plus-aspect/us-central1/sendData, mapping to path=/"}}
+[debug] [2022-08-10T13:13:11.882Z] [runtime-status] [21472] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Ephemeral server handling POST request"}}
+[info] >  {"structuredData":true,"severity":"INFO","message":"Writing data to database"} {"user":{"structuredData":true,"severity":"INFO","message":"Writing data to database"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"structuredData\":true,\"severity\":\"INFO\",\"message\":\"Writing data to database\"}"}}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    email: 'zaheudev@gmail.com', {"user":"  email: 'zaheudev@gmail.com',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m   email: 'zaheudev@gmail.com',"}}
+[info] >    day: '14', {"user":"  day: '14',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m   day: '14',"}}
+[info] >    month: '8', {"user":"  month: '8',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m   month: '8',"}}
+[info] >    year: '2022', {"user":"  year: '2022',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m   year: '2022',"}}
+[info] >    phone: '0749919911' {"user":"  phone: '0749919911'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m   phone: '0749919911'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2022-08-10T13:13:11.890Z] [runtime-status] [21472] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"[runtime-status] [21472] Ephemeral server survived."}}
+[info] i  functions: Finished "sendData" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"Finished \"sendData\" in ~1s"}}
+[debug] [2022-08-10T13:13:11.891Z] [worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sendData-5ea55f0b-b3ef-41df-b90f-a4b372938ce3]: IDLE"}}
+[debug] [2022-08-10T13:13:11.891Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] >  API called successfully. Returned data: {"messageId":"<202208101513.16533349869@smtp-relay.mailin.fr>"} {"user":"API called successfully. Returned data: {\"messageId\":\"<202208101513.16533349869@smtp-relay.mailin.fr>\"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sendData"},"extension":{},"message":"\u001b[90m> \u001b[39m API called successfully. Returned data: {\"messageId\":\"<202208101513.16533349869@smtp-relay.mailin.fr>\"}"}}
