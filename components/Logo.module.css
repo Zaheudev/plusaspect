@@ -1,0 +1,12 @@
+.parent img {
+  width: 14vw !important;
+  height: 5vw !important;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .parent img {
+    width: 50vw !important;
+    height: 20vw !important;
+  }
+}

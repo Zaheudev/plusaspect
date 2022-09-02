@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Link from "next/link";
+
+import LogoHeader from "../../components/LogoHeader";
 import classes from "./learn.module.css";
 
 export default function Learn() {
@@ -12,11 +15,19 @@ export default function Learn() {
         />
       </Head>
       <main className={classes.main}>
-        <div className={classes.head}>
+        <LogoHeader />
+        <h1>
+          THIS <span className={classes.purple}>PAGE</span> IS UNDER{" "}
+          <span className={classes.purple}>MAINTENANCE</span>
+        </h1>
+        <Link href="/">
+          <a className={classes.button}>PRESS HERE TO GET BACK TO HOME PAGE</a>
+        </Link>
+        {/* <header className={classes.head}>
           <h1>
             Welcome to <span className={classes.purple}><span className={classes.plus}>+</span>Learn</span>
           </h1>
-        </div>
+        </header>
         <div className={classes.description}>
           <h1>
             Here you will learn for <span className={classes.purple}>free</span>{" "}
@@ -25,7 +36,7 @@ export default function Learn() {
             has to know
           </h1>
           <p>Only Quick 30 Seconds videos</p>
-        </div>
+        </div> */}
       </main>
     </div>
   );

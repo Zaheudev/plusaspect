@@ -37,9 +37,10 @@ export default function Home() {
       <Head>
         <title>Plus Aspect</title>
         <meta name="description" content="Plus Aspect Official Website" />
+        <meta name="keywords" content="plus aspect, plusaspect"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={classes.navbar}>
+      <navbar className={classes.navbar}>
         <ul>
           <Image
             // loader={myLoader}
@@ -66,7 +67,7 @@ export default function Home() {
             </li>
           </span>
         </ul>
-      </div>
+      </navbar>
       <main>
         <section className={classes.intro}>
           <div className={classes.introText}>

@@ -26,9 +26,9 @@ const validateEmail = (email) => {
 
 exports.sendData = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
-    res.set("Access-Control-Allow-Origin", "http://localhost:3000");
-    // res.set("Access-Control-Allow-Origin", "https://plusaspect.com");
-    if(validateEmail(req.body.email) !== null && req.body.phone !== "" && req.body.phone.length > 3){
+    // res.set("Access-Control-Allow-Origin", "http://localhost:3000");
+    res.set("Access-Control-Allow-Origin", "https://plusaspect.com");
+    if(validateEmail(req.body.email) !== null && req.body.phone !== "" && req.body.phone.length > 3 && req.body.country !== "0"){
       functions.logger.info("Writing data to database", {structuredData: true});
       console.log(req.body);
       let data = req.body;
@@ -45,10 +45,10 @@ exports.sendData = functions.https.onRequest((req, res) => {
       let sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
       
       sendSmtpEmail.subject = "My {{params.subject}}";
-      sendSmtpEmail.templateId = 1;
-      sendSmtpEmail.sender = {"name":"Plus Aspect","email":"plusaspect@contact.com"};
-      sendSmtpEmail.to = [{"email":email,"name":"Jane Doe"}];
-      sendSmtpEmail.replyTo = {"email":"zaheudev@gmail.com","name":"John Doe"};
+      sendSmtpEmail.templateId = 5;
+      sendSmtpEmail.sender = {"name":"Plus Aspect","email":"contact@plusaspect.com"};
+      sendSmtpEmail.to = [{"email":email}];
+      sendSmtpEmail.replyTo = {"email":"contact@plusaspect.com","name":"Plus Aspect"};
       sendSmtpEmail.headers = {"Some-Custom-Name":"unique-id-1234"};
       sendSmtpEmail.params = {"parameter":"My param value","subject":"New Subject"};
     

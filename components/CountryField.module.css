@@ -1,0 +1,30 @@
+.field {
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid #662d91;
+  color: #662d91;
+  font-family: "textabold";
+  font-size: 1vw;
+  margin: 1vw;
+  margin-top: 0;
+  width: 11vw;
+}
+
+.error::placeholder {
+  color: red !important;
+}
+
+.error {
+  border-color: red !important;
+  color: red !important;
+}
+
+@media (max-width: 600px) {
+  .field {
+    font-size: 4.5vw;
+    width: 47vw;
+  }
+}

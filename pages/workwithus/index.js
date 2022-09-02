@@ -6,9 +6,12 @@ import instagram from "../../assets/instagram.svg";
 import telegram from "../../assets/telegram.svg";
 import whatsapp from "../../assets/whatsapp.svg";
 import Icon from "../../components/Icon";
+
 import axios from "axios";
 import qs from "qs";
 import Head from "next/head";
+import LogoHeader from "../../components/LogoHeader";
+import CountryField from "../../components/CountryField";
 
 let dt = new Date();
 export default function Workwithus() {
@@ -78,6 +81,7 @@ export default function Workwithus() {
     let day = dayState;
     let email = document.getElementById("input2").value;
     let phone = document.getElementById("input1").value;
+    let country = document.getElementById("country").value;
     document.getElementById("sendButton").style.display = "none";
     document.getElementById("loader").style.display = "block";
 
@@ -87,11 +91,12 @@ export default function Workwithus() {
       month: month + 1,
       year: year,
       phone: phone,
+      country: country,
     });
     var config = {
       method: "post",
-      // url: "https://us-central1-plus-aspect.cloudfunctions.net/sendData/",
-      url: "http://localhost:5001/plus-aspect/us-central1/sendData",
+      url: "https://us-central1-plus-aspect.cloudfunctions.net/sendData/",
+      // url: "http://localhost:5001/plus-aspect/us-central1/sendData",
       withCredentials: false,
       // origin: "http://localhost:3000",
       headers: {
@@ -135,7 +140,7 @@ export default function Workwithus() {
     <Fragment>
       <Head>
         <title>Plus Aspect | Work With Us</title>
-        <meta name="description" content="Plus Aspect Official Website | Work With Us Page" />
+        <meta name="description" content="Plus Aspect offers you a page where you can appoint a meeting call to work with us and settle everything" />
       </Head>
       <div id="modal" className={classes.modalContainer}>
         <div className={classes.modal}>
@@ -145,6 +150,7 @@ export default function Workwithus() {
                 Send
               </button>
               <div id="loader" className={classes.loader}></div>
+              <CountryField status={status}/>
               <input
                 id="input1"
                 name="Phone Number"
@@ -169,6 +175,7 @@ export default function Workwithus() {
       </div>
       <section className={classes.container}>
         <header className={classes.head}>
+          <LogoHeader/>
           <h1>
             Great Choise,{" "}
             <span className={classes.purple}>Let&apos;s Start From Here</span>
